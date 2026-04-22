@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ทำเนียบรายงานความยั่งยืน | PEA Sustainability</title>
+  <link rel="icon" type="image/png" href="assets/pea-logo-new.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .report-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 2rem 0;
+      justify-content: flex-start;
+    }
+    .report-card {
+      background: var(--pea-sidebar-bg);
+      border: 1px solid var(--pea-border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+      width: 414px;
+      max-width: 100%;
+    }
+    .report-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(168, 6, 137, 0.12);
+    }
+    .report-card-cover {
+      background: linear-gradient(135deg, var(--pea-accent), #6a1b9a);
+      padding: 3rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    .report-card-cover .year {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .report-card-cover .label {
+      font-size: 0.9rem;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+    .report-card-body {
+      padding: 1.5rem;
+    }
+    .report-card-body h3 {
+      font-size: 1rem;
+      color: var(--pea-accent);
+      margin-bottom: 0.75rem;
+    }
+    .report-card-body p {
+      font-size: 0.85rem;
+      color: var(--pea-text-muted);
+      margin-bottom: 1rem;
+    }
+    .report-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      background: var(--pea-accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Kanit', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .report-btn:hover { background: var(--pea-accent-hover); color: #fff; }
+    .report-btn svg { width: 16px; height: 16px; }
+    [data-theme="dark"] .report-card { background: var(--pea-sidebar-bg); border-color: var(--pea-border); }
+  </style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <button class="hamburger-btn" id="hamburgerBtn" title="เปิด/ปิดเมนู"><svg class="bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg><i class="fa-regular fa-square-minus close-icon"></i></button>
+    <span class="top-bar-title">56-1 One Report 2568</span>
+    <div class="font-picker">
+      <button id="fontDecrease" title="ลดขนาดตัวอักษร">A-</button>
+      <button id="fontIncrease" title="เพิ่มขนาดตัวอักษร">A+</button>
+    </div>
+    <div class="lang-selector">
+      <a href="#" class="active">TH</a>
+      <span class="lang-divider">|</span>
+      <a href="#">EN</a>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="assets/pea-logo-full.png" alt="PEA Logo">
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="sustainability-management.html">การบริหารความยั่งยืน</a></li>
+      <li><a href="stakeholder-relationship.html">การบริหารความสัมพันธ์ผู้มีส่วนได้ส่วนเสีย</a></li>
+      <li><a href="environmental.html">Environmental</a></li>
+      <li><a href="social.html">Social</a></li>
+      <li><a href="governance.html">Governance</a></li>
+      <li><a href="report-archive.html" class="active">ทำเนียบรายงานความยั่งยืน</a></li>
+    </ul>
+  </aside>
+
+  <main class="main-wrapper" id="mainWrapper">
+    <div class="content">
+
+      <h1>ทำเนียบรายงานความยั่งยืน</h1>
+
+      <div class="report-grid">
+
+        <!-- 2567 Report -->
+        <div class="report-card">
+          <div class="report-card-cover">
+            <div class="year">2567</div>
+            <div class="label">Sustainability Report</div>
+          </div>
+          <div class="report-card-body">
+            <h3>รายงานความยั่งยืนประจำปี 2567</h3>
+            <p>รายงานความยั่งยืนของการไฟฟ้าส่วนภูมิภาค ประจำปี 2567 ฉบับล่าสุด</p>
+            <a href="#" class="report-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              ดาวน์โหลด PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- 2566 Report -->
+        <div class="report-card">
+          <div class="report-card-cover" style="background: linear-gradient(135deg, #6a1b9a, #4a148c);">
+            <div class="year">2566</div>
+            <div class="label">Sustainability Report</div>
+          </div>
+          <div class="report-card-body">
+            <h3>รายงานความยั่งยืนประจำปี 2566</h3>
+            <p>รายงานความยั่งยืนของการไฟฟ้าส่วนภูมิภาค ประจำปี 2566</p>
+            <a href="#" class="report-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              ดาวน์โหลด PDF
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Page Navigation -->
+      <div class="page-nav prev-only">
+        <a href="governance.html">
+          <span style="font-size:1.2rem">&#8592;</span>
+          <span><small>ก่อนหน้า</small>Governance</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <button class="back-to-top" id="backToTop" title="กลับขึ้นด้านบน">&#8593;</button>
+  <script src="script.js"></script>
+</body>
+</html>
