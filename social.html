@@ -12,7 +12,7 @@
 
   <header class="top-bar">
     <button class="hamburger-btn" id="hamburgerBtn" title="เปิด/ปิดเมนู"><svg class="bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg><i class="fa-regular fa-square-minus close-icon"></i></button>
-    <span class="top-bar-title">56-1 One Report 2568</span>
+    <span class="top-bar-title">การพัฒนาความยั่งยืนของ PEA</span>
     <div class="font-picker">
       <button id="fontDecrease" title="ลดขนาดตัวอักษร">A-</button>
       <button id="fontIncrease" title="เพิ่มขนาดตัวอักษร">A+</button>
@@ -45,7 +45,7 @@
       <h1>Social</h1>
 
       <!-- Section 1: Customer-Centric Operations -->
-      <h2>การตอบสนองความต้องการของลูกค้า (Resilient &amp; Customer-Centric Operations)</h2>
+      <h2><span style="display: inline-flex; flex-direction: column; vertical-align: top;"><span>การตอบสนองความต้องการของลูกค้า</span><span>(Resilient &amp; Customer-Centric Operations)</span></span></h2>
 
       <h3>การขยายเขตโครงข่ายระบบไฟฟ้า</h3>
       <div class="info-cards">
@@ -56,6 +56,10 @@
               <p style="font-size: 2rem; font-weight: 700; color: var(--pea-accent); margin: 0;">179,174</p>
               <p style="font-size: 1rem; font-weight: 500; color: #24418F; margin: 0;">ครัวเรือน</p>
             </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem; margin-top: 0.5rem; color: #2e8540; font-weight: 500;">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ดีกว่าเป้าหมาย</span>
+            </div>
           </div>
         </div>
         <div class="info-card" style="background: #ffffff;">
@@ -64,6 +68,10 @@
             <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-top: auto;">
               <p style="font-size: 2rem; font-weight: 700; color: var(--pea-accent); margin: 0;">16,114</p>
               <p style="font-size: 1rem; font-weight: 500; color: #24418F; margin: 0;">ครัวเรือน</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem; margin-top: 0.5rem; color: #2e8540; font-weight: 500;">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ดีกว่าเป้าหมาย</span>
             </div>
           </div>
         </div>
@@ -74,31 +82,66 @@
               <p style="font-size: 2rem; font-weight: 700; color: var(--pea-accent); margin: 0;">22,123,367</p>
               <p style="font-size: 1rem; font-weight: 500; color: #24418F; margin: 0;">ครัวเรือน</p>
             </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem; margin-top: 0.5rem; color: #2e8540; font-weight: 500;">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ดีกว่าเป้าหมาย</span>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- สัดส่วนการเข้าถึงระบบไฟฟ้า -->
       <h3>สัดส่วนการเข้าถึงระบบไฟฟ้า</h3>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>ปี</th>
-            <th>สัดส่วน</th>
-            <th>ครัวเรือนที่สำรวจพบทั้งหมด</th>
-            <th>ครัวเรือนที่เข้าถึงระบบไฟฟ้าเรียบร้อยแล้ว</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>2564</td><td>99.72%</td><td>21,206,917</td><td>21,147,438</td></tr>
-          <tr><td>2565</td><td>99.73%</td><td>21,593,074</td><td>21,535,107</td></tr>
-          <tr><td>2566</td><td>99.70%</td><td>21,907,462</td><td>21,841,228</td></tr>
-          <tr><td>2567</td><td>99.57%</td><td>22,218,069</td><td>22,123,367</td></tr>
-        </tbody>
-      </table>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 1.5rem 0;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <div style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 96px; height: 96px;">
+            <svg width="96" height="96" viewBox="0 0 96 96" style="transform: rotate(-90deg);">
+              <circle cx="48" cy="48" r="40" fill="none" stroke="#e8e8ee" stroke-width="8"/>
+              <circle cx="48" cy="48" r="40" fill="none" stroke="var(--pea-accent)" stroke-width="8" stroke-dasharray="251.33" stroke-dashoffset="0.70" stroke-linecap="round"/>
+            </svg>
+            <span style="position: absolute; font-size: 1rem; font-weight: 700; color: var(--pea-accent);">99.72%</span>
+          </div>
+          <span style="font-weight: 500; color: #24418F;">2564</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <div style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 96px; height: 96px;">
+            <svg width="96" height="96" viewBox="0 0 96 96" style="transform: rotate(-90deg);">
+              <circle cx="48" cy="48" r="40" fill="none" stroke="#e8e8ee" stroke-width="8"/>
+              <circle cx="48" cy="48" r="40" fill="none" stroke="var(--pea-accent)" stroke-width="8" stroke-dasharray="251.33" stroke-dashoffset="0.68" stroke-linecap="round"/>
+            </svg>
+            <span style="position: absolute; font-size: 1rem; font-weight: 700; color: var(--pea-accent);">99.73%</span>
+          </div>
+          <span style="font-weight: 500; color: #24418F;">2565</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <div style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 96px; height: 96px;">
+            <svg width="96" height="96" viewBox="0 0 96 96" style="transform: rotate(-90deg);">
+              <circle cx="48" cy="48" r="40" fill="none" stroke="#e8e8ee" stroke-width="8"/>
+              <circle cx="48" cy="48" r="40" fill="none" stroke="var(--pea-accent)" stroke-width="8" stroke-dasharray="251.33" stroke-dashoffset="0.75" stroke-linecap="round"/>
+            </svg>
+            <span style="position: absolute; font-size: 1rem; font-weight: 700; color: var(--pea-accent);">99.70%</span>
+          </div>
+          <span style="font-weight: 500; color: #24418F;">2566</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+          <div style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 96px; height: 96px;">
+            <svg width="96" height="96" viewBox="0 0 96 96" style="transform: rotate(-90deg);">
+              <circle cx="48" cy="48" r="40" fill="none" stroke="#e8e8ee" stroke-width="8"/>
+              <circle cx="48" cy="48" r="40" fill="none" stroke="var(--pea-accent)" stroke-width="8" stroke-dasharray="251.33" stroke-dashoffset="1.08" stroke-linecap="round"/>
+            </svg>
+            <span style="position: absolute; font-size: 1rem; font-weight: 700; color: var(--pea-accent);">99.57%</span>
+          </div>
+          <span style="font-weight: 500; color: #24418F;">2567</span>
+        </div>
+      </div>
+      <div class="chart-wrapper" style="border: none;">
+        <div style="position: relative; max-width: 800px; margin: 0 auto;">
+          <canvas id="electricityAccessChart"></canvas>
+        </div>
+      </div>
 
       <!-- Section 2: Workforce Empowerment -->
-      <h2>การยกระดับศักยภาพบุคลากรด้วยนวัตกรรมและเทคโนโลยี (Empowering Workforce through Innovation &amp; Technology)</h2>
+      <h2><span style="display: inline-flex; flex-direction: column; vertical-align: top;"><span>การยกระดับศักยภาพบุคลากรด้วยนวัตกรรมและเทคโนโลยี</span><span>(Empowering Workforce through Innovation &amp; Technology)</span></span></h2>
 
       <div class="info-cards">
         <div class="info-card" style="background: #ffffff;">
@@ -107,6 +150,10 @@
             <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-top: auto;">
               <p style="font-size: 2rem; font-weight: 700; color: var(--pea-accent); margin: 0;">6.704</p>
               <p style="font-size: 1rem; font-weight: 500; color: #24418F; margin: 0;">ล้านราย</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem; margin-top: 0.5rem; color: #2e8540; font-weight: 500;">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ดีกว่าเป้าหมาย</span>
             </div>
           </div>
         </div>
@@ -117,6 +164,10 @@
               <p style="font-size: 2rem; font-weight: 700; color: var(--pea-accent); margin: 0;">1.465</p>
               <p style="font-size: 1rem; font-weight: 500; color: #24418F; margin: 0;">ล้านราย</p>
             </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem; margin-top: 0.5rem; color: #2e8540; font-weight: 500;">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ดีกว่าเป้าหมาย</span>
+            </div>
           </div>
         </div>
         <div class="info-card" style="background: #ffffff;">
@@ -125,6 +176,10 @@
             <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-top: auto;">
               <p style="font-size: 2rem; font-weight: 700; color: var(--pea-accent); margin: 0;">294,223</p>
               <p style="font-size: 1rem; font-weight: 500; color: #24418F; margin: 0;">ราย</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.4rem; margin-top: 0.5rem; color: #2e8540; font-weight: 500;">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>ดีกว่าเป้าหมาย</span>
             </div>
           </div>
         </div>
@@ -170,6 +225,83 @@
   </main>
 
   <button class="back-to-top" id="backToTop" title="กลับขึ้นด้านบน">&#8593;</button>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
+  <script>
+    Chart.overrides.line.spanGaps = true;
+    const electricityAccessCtx = document.getElementById('electricityAccessChart');
+    if (electricityAccessCtx) {
+      new Chart(electricityAccessCtx, {
+        type: 'line',
+        data: {
+          labels: ['2564', '2565', '2566', '2567'],
+          datasets: [
+            {
+              label: 'ครัวเรือนที่สำรวจพบทั้งหมด',
+              data: [21206917, 21593074, 21907462, 22218069],
+              borderColor: '#24418F',
+              backgroundColor: 'rgba(36, 65, 143, 0.12)',
+              borderWidth: 2,
+              tension: 0.3,
+              pointBackgroundColor: '#24418F',
+              pointBorderColor: '#fff',
+              pointRadius: 5,
+              fill: false
+            },
+            {
+              label: 'ครัวเรือนที่เข้าถึงระบบไฟฟ้าเรียบร้อยแล้ว',
+              data: [21147438, 21535107, 21841228, 22123367],
+              borderColor: '#a80689',
+              backgroundColor: 'rgba(168, 6, 137, 0.12)',
+              borderWidth: 2,
+              tension: 0.3,
+              pointBackgroundColor: '#a80689',
+              pointBorderColor: '#fff',
+              pointRadius: 5,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          aspectRatio: 2,
+          scales: {
+            x: {
+              ticks: { font: { family: 'Kanit', size: 13 }, color: '#1a1a2e' },
+              grid: { color: 'rgba(0,0,0,0.06)' }
+            },
+            y: {
+              beginAtZero: false,
+              ticks: {
+                font: { family: 'Kanit', size: 12 },
+                color: '#1a1a2e',
+                callback: function(value) { return value.toLocaleString(); }
+              },
+              grid: { color: 'rgba(0,0,0,0.06)' }
+            }
+          },
+          plugins: {
+            legend: {
+              labels: {
+                font: { family: 'Kanit', size: 13 },
+                usePointStyle: true,
+                pointStyle: 'circle'
+              }
+            },
+            tooltip: {
+              titleFont: { family: 'Kanit' },
+              bodyFont: { family: 'Kanit' },
+              callbacks: {
+                label: function(context) {
+                  return context.dataset.label + ': ' + context.parsed.y.toLocaleString() + ' ครัวเรือน';
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+  </script>
 </body>
 </html>

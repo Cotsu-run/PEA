@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     .report-grid {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
       gap: 2rem;
       margin: 2rem 0;
-      justify-content: flex-start;
+      width: 100%;
     }
     .report-card {
       background: var(--pea-sidebar-bg);
@@ -21,8 +21,7 @@
       border-radius: 16px;
       overflow: hidden;
       transition: transform 0.2s, box-shadow 0.2s;
-      width: 414px;
-      max-width: 100%;
+      width: 100%;
     }
     .report-card:hover {
       transform: translateY(-4px);
@@ -83,7 +82,7 @@
 
   <header class="top-bar">
     <button class="hamburger-btn" id="hamburgerBtn" title="เปิด/ปิดเมนู"><svg class="bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg><i class="fa-regular fa-square-minus close-icon"></i></button>
-    <span class="top-bar-title">56-1 One Report 2568</span>
+    <span class="top-bar-title">การพัฒนาความยั่งยืนของ PEA</span>
     <div class="font-picker">
       <button id="fontDecrease" title="ลดขนาดตัวอักษร">A-</button>
       <button id="fontIncrease" title="เพิ่มขนาดตัวอักษร">A+</button>
@@ -117,6 +116,22 @@
 
       <div class="report-grid">
 
+        <!-- 2568 Report -->
+        <div class="report-card">
+          <div class="report-card-cover">
+            <div class="year">2568</div>
+            <div class="label">Sustainability Report</div>
+          </div>
+          <div class="report-card-body">
+            <h3>รายงานความยั่งยืนประจำปี 2568</h3>
+            <p>รายงานความยั่งยืนของการไฟฟ้าส่วนภูมิภาค ประจำปี 2568 ฉบับล่าสุด</p>
+            <a href="#" class="report-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              ดาวน์โหลด PDF
+            </a>
+          </div>
+        </div>
+
         <!-- 2567 Report -->
         <div class="report-card">
           <div class="report-card-cover">
@@ -142,6 +157,76 @@
           <div class="report-card-body">
             <h3>รายงานความยั่งยืนประจำปี 2566</h3>
             <p>รายงานความยั่งยืนของการไฟฟ้าส่วนภูมิภาค ประจำปี 2566</p>
+            <a href="#" class="report-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              ดาวน์โหลด PDF
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <h3>รายงานความยั่งยืน</h3>
+
+      <div class="report-grid">
+
+        <!-- 2565 Report -->
+        <div class="report-card">
+          <div class="report-card-cover" style="background: linear-gradient(135deg, #4a148c, #311b92);">
+            <div class="year">2565</div>
+            <div class="label">Sustainability Report</div>
+          </div>
+          <div class="report-card-body">
+            <h3>รายงานความยั่งยืนประจำปี 2565</h3>
+            <p>รายงานความยั่งยืนของการไฟฟ้าส่วนภูมิภาค ประจำปี 2565</p>
+            <a href="#" class="report-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              ดาวน์โหลด PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- 2564 Report -->
+        <div class="report-card">
+          <div class="report-card-cover" style="background: linear-gradient(135deg, #311b92, #1a237e);">
+            <div class="year">2564</div>
+            <div class="label">Sustainability Report</div>
+          </div>
+          <div class="report-card-body">
+            <h3>รายงานความยั่งยืนประจำปี 2564</h3>
+            <p>รายงานความยั่งยืนของการไฟฟ้าส่วนภูมิภาค ประจำปี 2564</p>
+            <a href="#" class="report-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              ดาวน์โหลด PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- 2563 Report -->
+        <div class="report-card">
+          <div class="report-card-cover" style="background: linear-gradient(135deg, #1a237e, #0d47a1);">
+            <div class="year">2563</div>
+            <div class="label">Sustainability Report</div>
+          </div>
+          <div class="report-card-body">
+            <h3>รายงานความยั่งยืนประจำปี 2563</h3>
+            <p>รายงานความยั่งยืนของการไฟฟ้าส่วนภูมิภาค ประจำปี 2563</p>
+            <a href="#" class="report-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              ดาวน์โหลด PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- 2562 Report -->
+        <div class="report-card">
+          <div class="report-card-cover" style="background: linear-gradient(135deg, #0d47a1, #01579b);">
+            <div class="year">2562</div>
+            <div class="label">Sustainability Report</div>
+          </div>
+          <div class="report-card-body">
+            <h3>รายงานความยั่งยืนประจำปี 2562</h3>
+            <p>รายงานความยั่งยืนของการไฟฟ้าส่วนภูมิภาค ประจำปี 2562</p>
             <a href="#" class="report-btn">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               ดาวน์โหลด PDF
