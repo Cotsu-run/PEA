@@ -7,3 +7,10 @@ web_graphic_PEA logo & CI/
 *.jsonl
 *.ai
 .vercel
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
